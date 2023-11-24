@@ -26,6 +26,19 @@ public class Main {
             System.out.println(name +",");
         }
         // TODO search for the word "orange"
+        boolean found = false;
+        iter = list.iterator();
+        while(iter.hasNext()){
+            String name = iter.next();
+            if name.equals("orange"){
+                found = true;
+                break;
+            }
+        }
+        if(found)
+            System.out.println("Found :3");
+        else
+            System.out.println("Nuh uh");
 
 
         // iterate over the list and remove all "google"s
